@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>رضا غلامی | لینک‌های ارتباطی</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Kalameh/Kalameh.css" rel="stylesheet" />
+  <style>
+    :root {
+      --main-color: #1b1f3a; /* سورمه‌ای */
+      --light-gray: #f5f6fa;
+      --button-bg: #ffffff;
+      --hover-bg: #1b1f3a;
+      --hover-text: #ffffff;
+      --text-color: #1b1f3a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Kalameh", sans-serif;
+      background-color: var(--light-gray);
+      background-image: url("https://www.transparenttextures.com/patterns/whitediamond.png");
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--main-color);
+      margin-bottom: 16px;
+    }
+
+    .profile h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+
+    .profile p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .links {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link-button {
+      text-decoration: none;
+      padding: 16px 24px;
+      background-color: var(--button-bg);
+      border: 2px solid var(--main-color);
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: var(--main-color);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .link-button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: var(--hover-bg);
+      transition: right 0.4s ease;
+      z-index: 0;
+    }
+
+    .link-button:hover::before {
+      right: 0;
+    }
+
+    .link-button span {
+      position: relative;
+      z-index: 1;
+      transition: color 0.3s ease;
+    }
+
+    .link-button:hover span {
+      color: var(--hover-text);
+    }
+
+    @media (max-width: 480px) {
+      .link-button {
+        font-size: 15px;
+        padding: 14px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <!-- عکس پروفایل یا لوگوی خودت رو اینجا قرار بده -->
+    <img
+      src="https://github.com/rezaa-artt/rezaa.artt/blob/main/%DB%B2%DB%B0%DB%B2%DB%B5_%DB%B0%DB%B7_%DB%B0%DB%B1_%DB%B2%DB%B2_%DB%B1%DB%B7_IMG_6286.JPG?raw=true"
+    />
+    <h1>رضا غلامی</h1>
+    <p>راه‌های ارتباطی من در شبکه‌های اجتماعی</p>
+  </div>
+
+  <div class="links">
+    <a class="link-button" href="tel:+989350528024"><span>📞 تماس مستقیم</span></a>
+    <a class="link-button" href="https://wa.me/989350528024" target="_blank" rel="noopener"><span>📱 ارتباط در واتساپ</span></a>
+    <a class="link-button" href="https://t.me/r3zagh0lami" target="_blank" rel="noopener"><span>💬 پیام در تلگرام</span></a>
+    <a class="link-button" href="https://instagram.com/rezaa.artt" target="_blank" rel="noopener"><span>📸 مشاهده پیج اینستاگرام</span></a>
+  </div>
+</body>
+</html>
